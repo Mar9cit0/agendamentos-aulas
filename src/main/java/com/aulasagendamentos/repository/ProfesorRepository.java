@@ -12,7 +12,7 @@ import com.aulasagendamentos.entity.Profesor;
 
 @Repository
 public interface ProfesorRepository extends JpaRepository<Profesor,Serializable> {
-	@Query(value="SELECT * FROM profesores", nativeQuery = true)
-	public List<Profesor> prof();
+	@Query(value="SELECT * FROM profesores where area_id = :id", nativeQuery = true)
+	public List<Profesor> prof(Long id);
 
 }

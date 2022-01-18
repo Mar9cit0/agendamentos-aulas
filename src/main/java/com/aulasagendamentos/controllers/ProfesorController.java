@@ -16,17 +16,14 @@ import com.aulasagendamentos.services.ProfesorService;
 
 @CrossOrigin
 @RestController
-@RequestMapping("/api/prof/")
+@RequestMapping("/api/")
 public class ProfesorController {
 	@Autowired
 	private ProfesorService profesorService;
 
-	@GetMapping()
+	@GetMapping("prof/{id}")
 	public ResponseEntity<?> prof(@PathVariable(value = "id") Long areaId) {
-		System.out.print("------------------------PATH -------------------------------");
-		System.out.print(areaId);
-		System.out.print("------------------------PATH -------------------------------");
-		List<Profesor> profesores = profesorService.prof();
+		List<Profesor> profesores = profesorService.prof(areaId);
 
 		return ResponseEntity.status(HttpStatus.OK).body(profesores);
 	}

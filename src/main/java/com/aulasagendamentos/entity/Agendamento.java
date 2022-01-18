@@ -4,9 +4,11 @@ import java.io.Serializable;
 import java.sql.Date;
 
 import javax.persistence.Entity;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
 import javax.persistence.Table;
 
 @Entity
@@ -43,6 +45,21 @@ public class Agendamento implements Serializable {
 	public void setDate(Date date) {
 		this.date = date;
 	}
+	
+	public String getName_profesor() {
+		return name_profesor;
+	}
+	public void setName_profesor(String name_profesor) {
+		this.name_profesor = name_profesor;
+	}
+	public String getName_area() {
+		return name_area;
+	}
+	public void setName_area(String name_area) {
+		this.name_area = name_area;
+	}
+	
+	
 	private static final long serialVersionUID = 6446007362924177580L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -50,6 +67,11 @@ public class Agendamento implements Serializable {
 	private Long id_user;
 	private Long id_professor;
 	private String hour;
-	private Date date;
+	private Date date;	
+	private String name_profesor;
+	private String name_area;
+
+
+	
 
 }

@@ -19,10 +19,9 @@ public class ProfesorServiceImplement implements ProfesorService  {
 	
 	@Override
 	@Transactional
-	public  List<Profesor> prof(){
-		List<Profesor> profs =  profesorRepository.prof();
+	public  List<Profesor> prof(Long id){
+		List<Profesor> profs =  profesorRepository.prof(id);
 		return profs;
-
 	}
 
 }

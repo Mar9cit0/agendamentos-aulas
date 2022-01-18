@@ -23,7 +23,6 @@ public class AreaController {
 
 	@GetMapping("areas")
 	public ResponseEntity<?> areas() {
-		System.out.print( "PASEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
 		List<Area> areas = areaService.area();
 		return ResponseEntity.status(HttpStatus.OK).body(areas);
 		

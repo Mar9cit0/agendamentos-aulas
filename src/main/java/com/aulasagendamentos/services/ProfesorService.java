@@ -5,5 +5,5 @@ import java.util.List;
 import com.aulasagendamentos.entity.Profesor;
 
 public interface ProfesorService {
-	public List<Profesor> prof();
+	public List<Profesor> prof(Long id);
 }

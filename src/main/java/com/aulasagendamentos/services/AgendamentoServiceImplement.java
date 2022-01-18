@@ -1,5 +1,6 @@
 package com.aulasagendamentos.services;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,7 +49,13 @@ public class AgendamentoServiceImplement implements AgendamentoService {
 	public void deleteById(Long id) {
 		agendamentoRepository.deleteById(id);
 	}
-
+	
+	@Override
+	@Transactional
+	public  List<Agendamento> listar(Long id){
+		List<Agendamento> listar =  agendamentoRepository.listar(id);
+		return listar;
+	}
 
 
 	@Override
