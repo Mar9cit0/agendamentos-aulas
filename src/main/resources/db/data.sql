@@ -1,0 +1,3 @@
+INSERT INTO profesores(id,name, summary,enabled, area_id, email, phone) VALUES(1,"Maria Rodriguez", "Profesora de Español siendo este mi idioma nativo .... ",false,1,"maria@correo.com","+584128803722");
+INSERT INTO horarios(id_profesor, data,Hour00AM, Hour01AM, Hour02AM, Hour03AM,Hour04AM,Hour05AM,Hour06AM,Hour07AM,Hour08AM,Hour09AM,Hour10AM,Hour11AM,Hour12PM,Hour13PM,Hour14PM,Hour15PM,Hour16PM,Hour17PM,Hour18PM,Hour19PM,Hour20PM,Hour21PM,Hour22PM,Hour23PM) VALUES('1', "21/01/2021",false, false, false, false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,true,false,false,false,false,false);
+INSERT INTO areas_conocimientos(id, name) VALUES(1,"Aulas de Español");

@@ -1,0 +1,38 @@
+INSERT INTO profesores(id,name, summary,enabled, area_id, email, phone) VALUES(1,"Martin Puente", "sumary",false,1,"maria@correo.com","+584128803722");
+INSERT INTO profesores(id,name, summary,enabled, area_id, email, phone) VALUES(2,"Basilio Palomino", "Profesor .... ",false,1,"maria@correo.com","+584128803722");
+INSERT INTO profesores(id,name, summary,enabled, area_id, email, phone) VALUES(3,"Andreu Prada", "Profesora ... ",false,1,"maria@correo.com","+7878787878");
+INSERT INTO profesores(id,name, summary,enabled, area_id, email, phone) VALUES(4,"Loreto Quiroga", "Profesor .... ",false,2,"maria@correo.com","+8998989889");
+INSERT INTO profesores(id,name, summary,enabled, area_id, email, phone) VALUES(5,"Merce Meseguer", "Profesora.... ",false,2,"maria@correo.com","+45455454412");
+INSERT INTO profesores(id,name, summary,enabled, area_id, email, phone) VALUES(6,"Amanda Moron", "Profesora.... ",false,2,"maria@correo.com","+2332232323");
+INSERT INTO profesores(id,name, summary,enabled, area_id, email, phone) VALUES(7,"Camilo Uriarte", "Profesor .... ",false,3,"maria@correo.com","+433443433443");
+INSERT INTO profesores(id,name, summary,enabled, area_id, email, phone) VALUES(8,"Casilda Palacios", "Profesor .... ",false,3,"maria@correo.com","+5665556655");
+INSERT INTO profesores(id,name, summary,enabled, area_id, email, phone) VALUES(9,"Patrocinio Miro", "Profesor.... ",false,4,"maria@correo.com","+787887878");
+INSERT INTO profesores(id,name, summary,enabled, area_id, email, phone) VALUES(10,"Carolina Nuñez", "Profesor.... ",false,1,"maria@correo.com","+766767667675");
+
+INSERT INTO horarios(id_profesor, data,Hora, disponible) VALUES('1', "21/01/2021","10:00", true);
+INSERT INTO horarios(id_profesor, data,Hora, disponible) VALUES('2', "25/01/2022","11:00", true);
+INSERT INTO horarios(id_profesor, data,Hora, disponible) VALUES('3', "22/01/2022","07:00", true);
+INSERT INTO horarios(id_profesor, data,Hora, disponible) VALUES('4', "26/01/2022","11:00", true);
+INSERT INTO horarios(id_profesor, data,Hora, disponible) VALUES('5', "23/01/2022","13:00", true);
+INSERT INTO horarios(id_profesor, data,Hora, disponible) VALUES('6', "27/01/2022","15:00", true);
+INSERT INTO horarios(id_profesor, data,Hora, disponible) VALUES('7', "28/01/2022","18:00", true);
+INSERT INTO horarios(id_profesor, data,Hora, disponible) VALUES('8', "24/01/2022","20:00", true);
+INSERT INTO horarios(id_profesor, data,Hora, disponible) VALUES('9', "25/01/2022","21:00", true);
+INSERT INTO horarios(id_profesor, data,Hora, disponible) VALUES('10', "21/01/2022","14:00", true);
+INSERT INTO horarios(id_profesor, data,Hora, disponible) VALUES('1', "25/01/2022","16:00", true);
+INSERT INTO horarios(id_profesor, data,Hora, disponible) VALUES('2', "28/01/2022","17:00", true);
+INSERT INTO horarios(id_profesor, data,Hora, disponible) VALUES('3', "26/01/2022","09:00", true);
+INSERT INTO horarios(id_profesor, data,Hora, disponible) VALUES('4', "31/01/2022","08:00", true);
+INSERT INTO horarios(id_profesor, data,Hora, disponible) VALUES('5', "01/02/2022","12:00", true);
+INSERT INTO horarios(id_profesor, data,Hora, disponible) VALUES('6', "21/01/2022","11:00", true);
+INSERT INTO horarios(id_profesor, data,Hora, disponible) VALUES('7', "11/02/2022","13:00", true);
+INSERT INTO horarios(id_profesor, data,Hora, disponible) VALUES('8', "14/02/2022","12:00", true);
+INSERT INTO horarios(id_profesor, data,Hora, disponible) VALUES('9', "27/01/2022","16:00", true);
+INSERT INTO horarios(id_profesor, data,Hora, disponible) VALUES('10', "20/01/2022","14:00", true);
+INSERT INTO horarios(id_profesor, data,Hora, disponible) VALUES('1', "16/01/2022","15:00", true);
+INSERT INTO horarios(id_profesor, data,Hora, disponible) VALUES('2', "02/01/2022","10:00", true);
+
+INSERT INTO areas_conocimientos(id, name) VALUES(1,"Matematicas");
+INSERT INTO areas_conocimientos(id, name) VALUES(2,"Ingles");
+INSERT INTO areas_conocimientos(id, name) VALUES(3,"Español");
+INSERT INTO areas_conocimientos(id, name) VALUES(4,"Fisica");
